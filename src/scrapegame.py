@@ -18,7 +18,7 @@ logging.getLogger("heimdall").setLevel(logging.DEBUG)
 
 def main(uri):
     if uri == None:
-        uri = "file:///E:/Games/Testsets/Scraper Tests/SNES/Roms/Super Mario Kart.zip"
+        uri = "file:///E:/Games/Testsets/RCB 3.0/SNES/Roms/Super Mario Kart.zip"
 
     if urlparse.urlparse(uri).scheme == "":
         uri = urlparse.urlunparse(("file", "", uri, "", "", ""))
